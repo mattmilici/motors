@@ -1,0 +1,99 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-white.pug
+
+        // Breadcrumb Area
+        .breadcrumb-area.bg-img.bg-black-overlay.section_padding_130(style="background-image: url(img/bg-img/testimonials.jpg);")
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-9.col-xl-6
+                        .breadcrumb-content.text-center
+                            h2 We are good at services.
+                            p For 5 years we have been developing for providing better services.
+
+        // About Us Area
+        .about-us-area.section_padding_130
+            .container
+                .row
+                    .col-12.col-md-6.col-lg-7
+                        .about-us-content.mb-100
+                            h6 Who we are
+                            h2 For 5 years we have been developing for providing better services.
+                            a.btn.apland-btn(href="#") Know More
+
+                    .col-12.col-md-6.col-lg-5
+                        .about-us-content.mb-100
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non architecto a consequuntur, hic, incidunt tempora dignissimos. Ad, fugit. Rem expedita vitae sunt quibusdam maiores reiciendis accusamus. Voluptates, similique quos odio.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptate. Quaerat necessitatibus vel possimus vitae velit ipsam adipisci dolore in consequatur! Perspiciatis atque ex unde illum similique, magni, eveniet labore!
+
+            .container
+                .row
+                    .col-4
+                        .about-us-thumbnail.mb-30
+                            img(src="img/bg-img/about1.jpg", alt="")
+
+                        .about-us-thumbnail.third-img
+                            img(src="img/bg-img/testimonials.jpg", alt="")
+
+                    .col-8
+                        .about-us-thumbnail.mb-30.second-img
+                            img(src="img/bg-img/hero-7.jpg", alt="")
+                        .about-us-thumbnail
+                            img(src="img/bg-img/hero-6.jpg", alt="")
+
+        .container
+            .border-top            
+
+        // Service Area
+        .service-area.section_padding_130_80
+            .container
+                .row
+                    .col-12.col-md-6.col-lg-5
+                        .section_heading
+                            h6 The Bright Feature
+                            h3 A simple, smart &amp; 
+                                span proven way
+                                |  to boost your site performance.
+                            .line.ml-0
+
+                    .col-12.col-lg-7
+                        .row
+                            // Single Service Area
+                            .col-12.col-sm-6
+                                .single-service-area.mb-50
+                                    i.lni-bolt
+                                    h4 Infinite Features
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates officiis nihil doloremque praesentium.
+                                    
+                            // Single Service Area
+                            .col-12.col-sm-6
+                                .single-service-area.mb-50
+                                    i.lni-bi-cycle
+                                    h4 Simple &amp; Lightweight
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates officiis nihil doloremque praesentium.
+                                    
+                            // Single Service Area
+                            .col-12.col-sm-6
+                                .single-service-area.mb-50
+                                    i.lni-leaf
+                                    h4 Flexible
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates officiis nihil doloremque praesentium.
+                                    
+                            // Single Service Area
+                            .col-12.col-sm-6
+                                .single-service-area.mb-50
+                                    i.lni-flower
+                                    h4 Stunning Design
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates officiis nihil doloremque praesentium.
+
+        include inc/cta.pug
+
+        include inc/footer.pug
+
+        include inc/plugins.pug

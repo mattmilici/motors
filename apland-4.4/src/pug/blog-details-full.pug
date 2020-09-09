@@ -1,0 +1,101 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-white.pug
+
+        // Breadcrumb Area
+        .breadcrumb-area.bg-img.bg-black-overlay.section_padding_130(style="background-image: url(img/bg-img/testimonials.jpg);")
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-9.col-xl-6
+                        .breadcrumb-content.text-center
+                            h2 Blog Details
+                            p For 5 years we have been developing for providing better services.
+
+        // Blog Area
+        .apland-blog-area.section_padding_130_80
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-10.col-md-9.col-lg-8
+                        // Blog Post Area
+                        .single-blog-post
+                            span.post-date Jun 22, 2020
+                            h1.mb-3 For 5 years we have been developing for providing better services.
+                            .post-meta.mb-5
+                                a.post-author(href="#") By Admin
+                                a.post-tutorial(href="#") Tutorials
+                            img.post-thumbnail(src="img/blog-img/1.jpg", alt="")
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.
+                            h4.my-3 A proven way to boost your site performance.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.
+
+                        // Comments Area
+                        .comment_area.mb-50.clearfix
+                            h4.mb-4 03 Comments
+
+                            ol
+                                // Single Comment Area
+                                li.single_comment_area
+                                    .comment-content.d-flex
+                                        .comment-author
+                                            img(src="img/advisor-img/testimonial-1.jpg", alt="author")
+                                        .comment-meta
+                                            a.post-date(href="#") 27 Aug 2020
+                                            h6 Nazrul Islam
+                                            p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi
+                                            a.like.mr-2(href="#") Like
+                                            a.reply(href="#") Reply
+                                    
+                                    ol.children
+                                        li.single_comment_area
+                                            .comment-content.d-flex
+                                                .comment-author
+                                                    img(src="img/advisor-img/testimonial-2.jpg", alt="author")
+                                                .comment-meta
+                                                    a.post-date(href="#") Lim Sarah
+                                                    h6 Nazrul Islam
+                                                    p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi
+                                                    a.like.mr-2(href="#") Like
+                                                    a.reply(href="#") Reply
+
+                                // Single Comment Area
+                                li.single_comment_area
+                                    .comment-content.d-flex
+                                        .comment-author
+                                            img(src="img/advisor-img/testimonial-1.jpg", alt="author")
+                                        .comment-meta
+                                            a.post-date(href="#") 27 Aug 2020
+                                            h6 Riyadh Khan
+                                            p Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetu adipisci velit, sed quia non numquam eius modi
+                                            a.like.mr-2(href="#") Like
+                                            a.reply(href="#") Reply
+
+                        // Leave A Reply
+                        .contact-area.mb-50
+                            h4.mb-4 Leave A Comment
+
+                            // Form
+                            form.contact_from(action="#", method="post")
+                                .row
+                                    .col-12.col-lg-6
+                                        input.form-control.mb-30(type="text", name="message-name", placeholder="Your Name")
+                                    .col-12.col-lg-6
+                                        input.form-control.mb-30(type="email", name="message-email", placeholder="Email")
+                                    .col-12
+                                        textarea.form-control.mb-30(name="message", cols="30", rows="10", placeholder="Type your comments...")
+                                    .col-12
+                                        button.btn.apland-btn(type="submit") Post Comment
+
+        include inc/cta.pug
+
+        include inc/footer.pug
+
+        include inc/plugins.pug

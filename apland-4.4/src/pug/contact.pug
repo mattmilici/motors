@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-white.pug
+
+        // Breadcrumb Area
+        .breadcrumb-area.bg-img.bg-black-overlay.section_padding_130(style="background-image: url(img/bg-img/testimonials.jpg);")
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-9.col-xl-6
+                        .breadcrumb-content.text-center
+                            h2 Let's talk about everyting
+                            p For 5 years we have been developing for providing better services.
+
+        // Message Now Area
+        section.contact-area.section_padding_130_80
+            .container
+                .row
+                    .col-12.col-md-6
+                        .contact-content.mb-50
+                            h6 Contact Us
+                            h2 We'd love to hear from you
+                            p Appland is completely creative, lightweight, clean &amp; super responsive app landing page.
+
+                    .col-12.col-md-6
+                        .contact_from.mb-50
+                            form(action="mail.php", method="post", id="main_contact_form")
+                                .contact_input_area
+                                    #success_fail_info
+                                    .row
+                                        .col-12
+                                            .form-group
+                                                input.form-control(type="text", name="name", id="name", placeholder="Your Name", required)
+                                        
+                                        .col-12
+                                            .form-group
+                                                input.form-control(type="email", name="email", id="email", placeholder="Your E-mail", required)
+
+                                        .col-12
+                                            .form-group
+                                                input.form-control(type="text", name="subject", id="subject", placeholder="Your Subject", required)
+                                            
+                                        .col-12
+                                            .form-group
+                                                input.form-control(type="text", name="number", id="number", placeholder="Your Number *", required)
+
+                                        .col-12
+                                            .form-group
+                                                textarea.form-control(name="message", id="message", cols="30", rows="10", placeholder="Your Message *", required)
+
+                                        .col-12
+                                            button.btn.apland-btn(type="submit") SEND MESSAGE
+
+        include inc/cta.pug
+
+        include inc/footer.pug
+
+        include inc/plugins.pug

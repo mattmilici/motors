@@ -1,0 +1,83 @@
+/* White Nav CSS */
+.header_area {
+    &.white-nav {
+
+        .main_header_area {
+            border-bottom-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .is-sticky {
+            .main_header_area {
+                background-color: $dark-blue;
+            }
+        }
+
+        .classy-nav-container a {
+            color: $white-color;
+
+            &:hover,
+            &:focus {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            @media #{$breakpoint-md} {
+                color: $heading-color;
+
+                &:hover,
+                &:focus {
+                    color: $bg-default;
+                }
+            }
+
+            @media #{$breakpoint-sm} {
+                color: $heading-color;
+
+                &:hover,
+                &:focus {
+                    color: $bg-default;
+                }
+            }
+
+            @media #{$breakpoint-xs} {
+                color: $heading-color;
+
+                &:hover,
+                &:focus {
+                    color: $bg-default;
+                }
+            }
+        }
+
+        .classynav ul li:hover>a,
+        .classynav ul li.current_page_item>a {
+            color: $yellow-color;
+        }
+
+        .classynav ul li ul li a {
+            color: $heading-color;
+
+            &:hover,
+            &:focus {
+                color: $bg-default;
+            }
+        }
+
+        .classynav ul li.has-down>a::after,
+        .classynav ul li.megamenu-item>a::after {
+            color: $white-color;
+        }
+
+        .login-btn-area .btn {
+            color: $white-color;
+
+            &:hover,
+            &:focus {
+                color: $bg-default;
+            }
+        }
+
+        .classy-navbar-toggler .navbarToggler span {
+            background-color: $white-color;
+        }
+    }
+}

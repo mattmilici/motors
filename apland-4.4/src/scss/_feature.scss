@@ -1,0 +1,128 @@
+/* Features CSS */
+
+.using_benefits_area {
+    position: relative;
+    z-index: 1;
+    background-color: $dark-blue;
+    overflow: hidden;
+
+    .benefit-top-thumbnail img {
+        position: absolute;
+        z-index: -10;
+        width: auto;
+        top: -2px;
+        left: -2px;
+    }
+
+    .benefit-bottom-thumbnail img {
+        position: absolute;
+        z-index: -10;
+        width: auto;
+        bottom: -2px;
+        right: -2px;
+    }
+}
+
+.single_benifits {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    @include trans-duration(500ms);
+
+    .icon_box {
+        @include flex(0 0 80px);
+        max-width: 80px;
+        width: 80px;
+        height: 80px;
+        font-size: 2.25rem;
+        @include trans-duration(500ms);
+        margin-right: 1.5rem;
+        background-color: $bg-default;
+        color: $white-color;
+        text-align: center;
+        border-radius: 50%;
+        margin-top: 2px;
+
+        @media #{$breakpoint-sm} {
+            @include flex(0 0 65px);
+            max-width: 65px;
+            width: 65px;
+            height: 65px;
+            font-size: 1.75rem;
+        }
+
+        i {
+            line-height: 80px;
+
+            @media #{$breakpoint-sm} {
+                line-height: 65px;
+            }
+        }
+    }
+
+    h5 {
+        @include trans-duration(500ms);
+        color: $white-color;
+        margin-bottom: .75rem;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.7);
+
+        @media #{$breakpoint-lg} {
+            font-size: 14px;
+        }
+
+        @media #{$breakpoint-md} {
+            font-size: 14px;
+        }
+
+        @media #{$breakpoint-sm} {
+            font-size: 14px;
+        }
+    }
+
+    a {
+        display: block;
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 0.6);
+
+        &:hover,
+        &:focus {
+            color: $yellow-color;
+        }
+    }
+
+    .single_benifits_text {
+        h5 {
+            @include trans-duration(500ms);
+            color: $heading-color;
+        }
+
+        p {
+            color: $text-color;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        h5 {
+            color: $yellow-color;
+        }
+
+        .single_benifits_text {
+            h5 {
+                color: $bg-default;
+            }
+        }
+    }
+}
+
+.main_features_area .single_benifits {
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}

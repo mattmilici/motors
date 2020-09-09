@@ -1,0 +1,83 @@
+/* FAQ CSS */
+
+.faq_area {
+    position: relative;
+    z-index: 1;
+    background-color: $gray-color;
+}
+
+.faq-accordian {
+    position: relative;
+    z-index: 1;
+
+    .card {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-header {
+            background-color: $white-color;
+            padding: 0;
+            border-bottom-color: $border-color;
+
+            h6 {
+                cursor: pointer;
+                padding: 1.75rem 2rem;
+                color: $bg-default;
+                @include display-flex(flex);
+                @include align-items(center);
+                @include justify-content-between;
+
+                span {
+                    font-size: 1.5rem;
+                }
+
+                &.collapsed {
+                    color: $dark-blue;
+
+                    span {
+                        @include transform(rotate(-180deg));
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            padding: 1.75rem 2rem;
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.support-button {
+    p {
+        @media #{$breakpoint-xs} {
+            font-size: 14px;
+        }
+    }
+
+    i {
+        color: $bg-default;
+        font-size: 1.25rem;
+
+        @media #{$breakpoint-xs} {
+            font-size: 1rem;
+        }
+    }
+
+    a {
+        text-transform: capitalize;
+        color: $bg-green;
+
+        @media #{$breakpoint-xs} {
+            font-size: 13px;
+        }
+    }
+}

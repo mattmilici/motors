@@ -1,0 +1,121 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        include inc/header-white.pug
+
+        // Breadcrumb Area
+        .breadcrumb-area.bg-img.bg-black-overlay.section_padding_130(style="background-image: url(img/bg-img/testimonials.jpg);")
+            .container
+                .row.justify-content-center
+                    .col-12.col-sm-9.col-xl-6
+                        .breadcrumb-content.text-center
+                            h2 Blog Left Sidebar
+                            p For 5 years we have been developing for providing better services.
+
+        // Blog Area
+        .apland-blog-area.section_padding_130
+            .container
+                .row.justify-content-between
+                    .col-12.col-md-5.col-lg-4
+                        .sidebar-area.mb-100.mb-md-0
+                            include inc/sidebar.pug
+
+                    .col-12.col-md-7
+                        // Single Blog Post Area
+                        .single-blog-post.mb-5
+                            .post-date Jun 22, 2020
+                            a.post-title(href="blog-details-full.html") For 5 years we have been developing
+                            img.post-thumbnail(src="img/blog-img/1.jpg", alt="")
+                            .post-meta
+                                a.post-author(href="#") By Admin
+                                a.post-tutorial(href="#") Tutorials
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                            a.btn.apland-btn.mt-3(href="blog-details-full.html") Continue Reading
+
+                        // Single Blog Post Area
+                        .single-blog-post.mb-5
+                            .post-date Jun 20, 2020
+                            a.post-title(href="blog-details-full.html") This is sign you have been looking for
+                            img.post-thumbnail(src="img/blog-img/2.jpg", alt="")
+                            .post-meta
+                                a.post-author(href="#") By Admin
+                                a.post-tutorial(href="#") Tutorials
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                            a.btn.apland-btn.mt-3(href="blog-details-full.html") Continue Reading
+
+                        // Single Blog Post Area
+                        .single-blog-post.mb-5
+                            .post-date Jun 18, 2020
+                            a.post-title(href="blog-details-full.html") Three men laughing while looking in the laptop inside room
+                            img.post-thumbnail(src="img/blog-img/3.jpg", alt="")
+                            .post-meta
+                                a.post-author(href="#") By Admin
+                                a.post-tutorial(href="#") Tutorials
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                            a.btn.apland-btn.mt-3(href="blog-details-full.html") Continue Reading
+                        
+                        // Single Blog Post Area
+                        .single-blog-post.mb-5
+                            .post-date Jun 16, 2020
+                            a.post-title(href="blog-details-full.html") Live, work, creative
+                            img.post-thumbnail(src="img/blog-img/4.jpg", alt="")
+                            .post-meta
+                                a.post-author(href="#") By Admin
+                                a.post-tutorial(href="#") Tutorials
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                            a.btn.apland-btn.mt-3(href="blog-details-full.html") Continue Reading
+                        
+                        // Single Blog Post Area
+                        .single-blog-post.mb-5
+                            .post-date Jun 14, 2020
+                            a.post-title(href="blog-details-full.html") Architectural photography of building with people.
+                            img.post-thumbnail(src="img/blog-img/5.jpg", alt="")
+                            .post-meta
+                                a.post-author(href="#") By Admin
+                                a.post-tutorial(href="#") Tutorials
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                            a.btn.apland-btn.mt-3(href="blog-details-full.html") Continue Reading
+                        
+                        // Single Blog Post Area
+                        .single-blog-post.mb-5
+                            .post-date Jun 12, 2020
+                            a.post-title(href="blog-details-full.html") Why we use Apple phone randomly?
+                            img.post-thumbnail(src="img/blog-img/6.jpg", alt="")
+                            .post-meta
+                                a.post-author(href="#") By Admin
+                                a.post-tutorial(href="#") Tutorials
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.
+                            a.btn.apland-btn.mt-3(href="blog-details-full.html") Continue Reading
+
+                        .row
+                            .col-12
+                                .apland-blog-pagination
+                                    nav(aria-label="Page navigation example")
+                                        ul.pagination.justify-content-center
+                                            li.page-item
+                                                a.page-link(href="#", aria-label="Previous")
+                                                    i.lni-chevron-left
+                                            li.page-item.active
+                                                a.page-link(href="#") 1
+                                            li.page-item
+                                                a.page-link(href="#") 2
+                                            li.page-item
+                                                a.page-link(href="#") 3
+                                            li.page-item
+                                                a.page-link(href="#") 4
+                                            li.page-item
+                                                a.page-link(href="#") 5
+                                            li.page-item
+                                                a.page-link(href="#", aria-label="Next")
+                                                    i.lni-chevron-right
+
+        include inc/cta.pug
+
+        include inc/footer.pug
+
+        include inc/plugins.pug

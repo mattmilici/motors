@@ -1,0 +1,140 @@
+/* Team CSS */
+
+.single_advisor_profile {
+    position: relative;
+    margin-bottom: 50px;
+    @include trans-duration(500ms);
+    z-index: 1;
+    border-radius: 15px;
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+
+    .advisor_thumb {
+        position: relative;
+        z-index: 1;
+        border-radius: 15px 15px 0 0;
+        margin: 0 auto;
+        padding: 30px 30px 0 30px;
+        background-color: $bg-default;
+        overflow: hidden;
+
+        &::after {
+            @include trans-duration(500ms);
+            position: absolute;
+            width: 150%;
+            height: 80px;
+            bottom: -45px;
+            left: -25%;
+            content: '';
+            background-color: $white-color;
+            @include transform(rotate(-15deg));
+
+            @media #{$breakpoint-xs} {
+                height: 160px;
+                bottom: -90px;
+            }
+        }
+
+        .social-info {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            bottom: 0;
+            right: 30px;
+            text-align: right;
+
+            a {
+                font-size: 14px;
+                color: $heading-color;
+                padding: 0 5px;
+
+                &:hover,
+                &:focus {
+                    color: $bg-default;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .single_advisor_details_info {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        text-align: right;
+        @include trans-duration(500ms);
+        border-radius: 0 0 15px 15px;
+        background-color: $white-color;
+
+        &::after {
+            @include trans-duration(500ms);
+            position: absolute;
+            z-index: 1;
+            width: 50px;
+            height: 3px;
+            background-color: $bg-default;
+            content: '';
+            top: 12px;
+            right: 30px;
+        }
+
+        h6 {
+            margin-bottom: 0.25rem;
+            @include trans-duration(500ms);
+
+            @media #{$breakpoint-md} {
+                font-size: 14px;
+            }
+        }
+
+        p {
+            @include trans-duration(500ms);
+            margin-bottom: 0;
+            font-size: 14px;
+
+            @media #{$breakpoint-md} {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &:hover,
+    &:focus {
+        .advisor_thumb {
+
+            &::after {
+                background-color: $dark-blue;
+            }
+
+            .social-info {
+
+                a {
+                    color: $white-color;
+
+                    &:hover,
+                    &:focus {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+
+        .single_advisor_details_info {
+            background-color: $dark-blue;
+
+            &::after {
+                background-color: $white-color;
+            }
+
+            h6 {
+                color: $white-color;
+            }
+
+            p {
+                color: $white-color;
+            }
+        }
+    }
+}

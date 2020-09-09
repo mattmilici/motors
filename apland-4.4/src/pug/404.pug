@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Content Wrapper Area
+        .content-wrapper-area.bg-white.d-flex.justify-content-between.align-items-center
+            // Logo
+            a.logo(href="index.html")
+                img(src="img/core-img/logo.png", alt="")
+
+            // Content
+            .main-content.pt-5
+                .container
+                    .row.align-items-center
+                        .col-12.col-md-6.mb-5
+                            img(src="img/bg-img/404.png", alt="")
+
+                        .col-12.col-md-6.mb-5
+                            h2 OOPS! <br> Page not found!
+                            p We couldn't find any results for your search. Try again.
+                            a.btn.apland-btn(href="index.html") Go Home
+
+            // Footer Copwrite Area
+            .footer_bottom
+                p Made with 
+                    i.fa.fa-heart 
+                    |  by
+                    a(href="https://wrapbootstrap.com/user/DesigningWorld") 
+                    |  Designing World
+
+        include inc/plugins.pug

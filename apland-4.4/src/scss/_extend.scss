@@ -1,0 +1,45 @@
+/* Extend CSS */
+
+%p_bg_color {
+    background-color: $bg-default;
+}
+
+%p_b_color {
+    border-color: $bg-default;
+}
+
+%p_color {
+    color: $bg-default;
+}
+
+%para_color {
+    color: $text-color;
+}
+
+%p_bt_color {
+    border-top-color: $bg-default !important;
+}
+
+%icon-gradients {
+    background: $bg-default;
+    background: -webkit-linear-gradient(to right, #FC466B, #0984e3);
+    background: linear-gradient(to right, #FC466B, #0984e3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+%dark_bg_color {
+    background-color: $dark-color;
+}
+
+%color_white {
+    color: $white-color;
+}
+
+%c_white {
+    color: $white-color;
+}
+
+%bg_white {
+    background-color: $white-color;
+}

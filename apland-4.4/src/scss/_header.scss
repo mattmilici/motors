@@ -1,0 +1,227 @@
+/* Header CSS */
+.header_area {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: transparent;
+}
+
+.main_header_area {
+    width: 100%;
+    @include trans-duration(500ms);
+    border-bottom: 1px solid $gray-color;
+    background-color: transparent;
+}
+
+.classy-nav-container {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+
+    a:hover,
+    a:focus {
+        @extend %p_color;
+    }
+
+    .classy-navbar {
+        @include trans-duration(500ms);
+        height: 90px;
+
+        @media #{$breakpoint-md} {
+            height: 80px;
+        }
+
+        @media #{$breakpoint-sm} {
+            height: 60px;
+        }
+
+        @media #{$breakpoint-xs} {
+            height: 60px;
+        }
+
+        .classynav ul li {
+            a {
+                padding: 32px 15px;
+                height: auto;
+                line-height: 1;
+                font-weight: 500;
+                text-transform: uppercase;
+
+                @media #{$breakpoint-md} {
+                    padding: 15px;
+                }
+
+                @media #{$breakpoint-sm} {
+                    padding: 15px;
+                }
+
+                @media #{$breakpoint-xs} {
+                    padding: 15px;
+                }
+            }
+
+            .megamenu {
+                box-shadow: 0 8px 50px 8px rgba(47, 91, 234, 0.175);
+
+                @media #{$breakpoint-md} {
+                    box-shadow: none;
+                    background-color: $white-color;
+                }
+
+                @media #{$breakpoint-sm} {
+                    box-shadow: none;
+                    background-color: $white-color;
+                }
+
+                @media #{$breakpoint-xs} {
+                    box-shadow: none;
+                    background-color: $white-color;
+                }
+
+                a {
+                    padding: 15px;
+                    text-transform: capitalize;
+                    color: $text-color;
+
+                    &:hover,
+                    &:focus {
+                        color: $hover-color;
+                    }
+                }
+            }
+
+            .dropdown {
+                width: 260px;
+                box-shadow: 0 8px 50px 8px rgba(47, 91, 234, 0.175);
+                padding-top: 18px;
+                padding-bottom: 18px;
+
+                @media #{$breakpoint-md} {
+                    width: 100%;
+                    box-shadow: none;
+                    background-color: $white-color;
+                }
+
+                @media #{$breakpoint-sm} {
+                    width: 100%;
+                    box-shadow: none;
+                    background-color: $white-color;
+                }
+
+                @media #{$breakpoint-xs} {
+                    width: 100%;
+                    box-shadow: none;
+                    background-color: $white-color;
+                }
+
+                a {
+                    padding: 12px 30px;
+                    text-transform: capitalize;
+                    border-bottom: 0;
+                    color: $text-color;
+
+                    &:hover,
+                    &:focus {
+                        color: $hover-color;
+                    }
+                }
+            }
+
+            &.current_page_item {
+                >a {
+                    color: $hover-color;
+                }
+            }
+
+            &:hover {
+                >a {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}
+
+.classynav ul li .megamenu .single-mega .title {
+    margin-bottom: 0.8rem;
+}
+
+.classynav ul li.has-down>a::after,
+.classynav ul li.megamenu-item>a::after {
+    color: $heading-color;
+}
+
+.login-btn-area {
+    .btn {
+        color: $white-color;
+    }
+}
+
+.classynav ul li.megamenu-item>a:hover::after {
+    @include transform(rotate(180deg));
+}
+
+.breakpoint-off .classynav ul li .dropdown {
+    border-radius: 6px;
+    width: 200px;
+}
+
+.breakpoint-on .classynav ul li ul li a {
+    padding: 0 25px;
+}
+
+.breakpoint-on .classynav ul li.has-down.active>.dd-trigger,
+.breakpoint-on .classynav ul li.megamenu-item.active>.dd-trigger {
+    background-color: $bg-default;
+}
+
+.breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-3,
+.breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-4,
+.breakpoint-on .classynav ul li .megamenu .single-mega.cn-col-5 {
+    background-color: $white-color;
+}
+
+.classy-navbar-toggler {
+    line-height: 1;
+}
+
+.classy-navbar-toggler .navbarToggler span {
+    background-color: $dark-blue;
+}
+
+.breakpoint-on .classy-navbar .classy-menu {
+    background-color: $gray-color;
+}
+
+.breakpoint-on .classynav>ul>li>a {
+    background-color: transparent;
+}
+
+.is-sticky {
+    .main_header_area {
+        box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+        z-index: 9999999 !important;
+        background-color: $white-color;
+        width: 100% !important;
+        border-bottom: 1px solid transparent;
+
+        .classy-navbar {
+            height: 80px;
+
+            @media #{$breakpoint-md} {
+                height: 70px;
+            }
+
+            @media #{$breakpoint-sm} {
+                height: 60px;
+            }
+
+            @media #{$breakpoint-xs} {
+                height: 60px;
+            }
+        }
+    }
+}

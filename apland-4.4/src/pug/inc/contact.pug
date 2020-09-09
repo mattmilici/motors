@@ -1,0 +1,48 @@
+// Message Now Area
+.message_now_area.bg-gray.wow.fadeInUp(data-wow-delay="0.5s")
+    .container
+        .row
+            .col-12
+                .apland-contact-form
+                    // Section Title
+                    .message_title
+                        .section_heading
+                            h6 Contact with us
+                            h3 We'd love to hear from you
+                            p Appland is completely creative, lightweight, clean app landing page.
+                            .line.ml-0
+
+                    // Contact Form
+                    .contact_from
+                        form#main_contact_form(action="mail.php", method="post")
+                            .contact_input_area
+                                #success_fail_info
+                                .row
+                                    .col-lg-6
+                                        .form-group.mb-30
+                                            input.form-control#name(type="text", name="name", placeholder="Your Name", required)
+                                            
+                                    .col-lg-6
+                                        .form-group.mb-30
+                                            input.form-control#email(type="email", name="email", placeholder="Your Email", required)
+                                            
+                                    .col-lg-6
+                                        .form-group.mb-30
+                                            input.form-control#subject(type="text", name="subject", placeholder="Your Topic", required)
+                                            
+                                    .col-lg-6
+                                        .form-group.mb-30
+                                            input.form-control#number(type="text", name="number", placeholder="Your Phone", required)
+
+                                    .col-12
+                                        .form-group.mb-30
+                                            textarea.form-control#message(name="message", cols="30", rows="10", placeholder="Your Message", required)
+
+                                    .col-sm-6
+                                        .custom-control.custom-checkbox.mr-sm-2.mb-3.mb-sm-0
+                                            input.custom-control-input#customControlAutosizing(type="checkbox")
+                                            label.custom-control-label(for="customControlAutosizing") Accept terms and conditions
+                                    
+                                    .col-sm-6.text-right
+                                        button.btn.apland-btn(type="submit")
+                                            | SEND NOW

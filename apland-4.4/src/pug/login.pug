@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+    head
+        include inc/head.pug
+
+    body
+        include inc/loader.pug
+
+        // Register Area
+        .register-area.d-flex
+            .register-content-wrapper.d-flex.align-items-center
+                .register-content
+                    // Logo
+                    a.logo(href="index.html")
+                        img(src="img/core-img/logo.png", alt="")
+
+                    h5 Welcome back.
+                    p Don't have an account? 
+                        a(href="register.html") Sign up
+
+                    // Form
+                    .register-form
+                        form(action="#", method="post")
+                            .form-group
+                                i.lni-user
+                                input.form-control(type="text", placeholder="Username")
+                            .form-group
+                                i.lni-lock
+                                input.form-control(type="password", placeholder="Password")
+                            .custom-control.custom-checkbox.mb-3.mr-sm-2
+                                input.custom-control-input#rememberMe(type="checkbox")
+                                label.custom-control-label(for="rememberMe") Keep me logged in
+                            button.btn.apland-btn.w-100(type="submit") Log In
+                            a.forgot-password(href="forget-password.html") Forgot Password?
+
+                    // Sign in via others
+                    .signin-via-others
+                        p Or Log in with
+                        a.btn.apland-btn.btn-4.w-100.mt-15(href="#")
+                            i.fa.fa-facebook 
+                            |  Log in with Facebook
+                        a.btn.apland-btn.btn-4.w-100.mt-15(href="#")
+                            i.fa.fa-twitter 
+                            |  Log in with Twitter
+
+                    // Footer Copwrite Area
+                    .footer_bottom
+                        p Made with 
+                            i.fa.fa-heart 
+                            |  by  
+                            a(href="https://wrapbootstrap.com/user/DesigningWorld") Designing World
+
+            // Register Side Content
+            .register-side-content.bg-img(style="background-image: url(img/bg-img/hero-7.jpg);")
+
+        include inc/plugins.pug

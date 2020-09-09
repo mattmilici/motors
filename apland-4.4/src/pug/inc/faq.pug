@@ -1,0 +1,52 @@
+// FAQ Area
+.faq_area.section_padding_130#faq
+    .container
+        .row.justify-content-center
+            .col-12.col-sm-8.col-lg-6
+                // Section Heading
+                .section_heading.text-center.wow.fadeInUp(data-wow-delay="0.2s")
+                    h3
+                        span Frequently 
+                        |  Asked Questions
+                    p Appland is completely creative, lightweight, clean &amp; super responsive app landing page.
+                    .line
+
+        .row.justify-content-center
+            // FAQ Area
+            .col-12.col-sm-10.col-lg-8
+                .accordion.faq-accordian#faqAccordion
+                    .card.border-0.wow.fadeInUp(data-wow-delay="0.2s")
+                        .card-header#headingOne
+                            h6.mb-0.collapsed(data-toggle="collapse", data-target="#collapseOne", aria-expanded="true", aria-controls="collapseOne") How can I install this app?
+                                span.lni-chevron-up
+
+                        #collapseOne.collapse(aria-labelledby="headingOne" data-parent="#faqAccordion")
+                            .card-body
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.
+                                p Appland is completely creative, lightweight, clean & super responsive app landing page.
+
+                    .card.border-0.wow.fadeInUp(data-wow-delay="0.3s")
+                        .card-header#headingTwo
+                            h6.mb-0.collapsed(data-toggle="collapse", data-target="#collapseTwo", aria-expanded="true", aria-controls="collapseTwo") The apps isn't installing?
+                                span.lni-chevron-up
+
+                        #collapseTwo.collapse(aria-labelledby="headingTwo" data-parent="#faqAccordion")
+                            .card-body
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.
+                                p Appland is completely creative, lightweight, clean & super responsive app landing page.
+                                
+                    .card.border-0.wow.fadeInUp(data-wow-delay="0.4s")
+                        .card-header#headingThree
+                            h6.mb-0.collapsed(data-toggle="collapse", data-target="#collapseThree", aria-expanded="true", aria-controls="collapseThree") Contact form isn't working?
+                                span.lni-chevron-up
+
+                        #collapseThree.collapse(aria-labelledby="headingThree" data-parent="#faqAccordion")
+                            .card-body
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.
+                                p Appland is completely creative, lightweight, clean & super responsive app landing page.
+
+                // Support Button
+                .support-button.text-center.d-flex.align-items-center.justify-content-center.mt-4.wow.fadeInUp(data-wow-delay="0.5s")
+                    i.lni-emoji-sad
+                    p.mb-0.px-2 Can't find your answers?
+                    a(href="#")  Contact us

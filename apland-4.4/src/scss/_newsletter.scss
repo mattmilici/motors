@@ -1,0 +1,62 @@
+/* Newsletter CSS */
+
+.newsletter_area {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: $gray-color;
+}
+
+.newsletter-form-area {
+    .form-group {
+        margin-bottom: 0;
+    }
+
+    input {
+        width: 400px;
+        height: 55px;
+        border-radius: 30px;
+        padding: 15px 30px;
+
+        @media #{$breakpoint-xs} {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    .button {
+        width: 150px;
+        height: 55px;
+        border-radius: 30px;
+        padding: 15px;
+        @extend %p_bg_color;
+        color: $white-color;
+    }
+}
+
+.newsletter-form {
+    input {
+        border: none;
+        border-radius: 30px;
+        height: 60px;
+        margin-top: 30px;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    small {
+        margin-left: 15px;
+    }
+
+    .newsletter_btn {
+        background-color: $bg_green;
+        border: none;
+        border-radius: 30px;
+        color: $white-color;
+        height: 60px;
+        padding: 0 60px;
+        font-size: 18px;
+    }
+}

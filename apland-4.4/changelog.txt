@@ -1,0 +1,149 @@
+---------------------------------------
+:: Latest Version: 4.4.0 - Jun 27, 2020
+---------------------------------------
+* Updated: Bootstrap 4.4.1 > Bootstrap 4.5.0
+* Updated: Gulp 3.9.1 > Gulp 4
+
+
+--------------------------------
+:: Version: 4.3.0 - Jan 12, 2020
+--------------------------------
+* Updated: Design Quality
+* Updated: Bootstrap 4.3.1 > Bootstrap 4.4.1
+* Updated: Code Quality
+* Removed: IcoFont Web Fonts
+* Added: LineIcons Web Fonts
+
+
+-------------------------------------
+:: Version: 4.2.1 - September 17,2019
+-------------------------------------
+* Updated: Design Quality
+* Updated: Code & Responsive
+
+
+------------------------------------
+:: Version: 4.2.0 - August 22, 2019
+------------------------------------
+* New Added: Pug
+
+
+-------------------------------------
+:: Version - 4.1.0 - August 20, 2019
+-------------------------------------
+* New Added: Node Package Manager
+* New Added: Gulp
+* Updated: Documentation
+
+
+-----------------------------------
+:: Version - 4.0.2 - July 27, 2019
+-----------------------------------
+* Improved: Color Contrast
+
+
+----------------------------------
+:: Version - 4.0.1 - June 8, 2019
+----------------------------------
+* Fixed: Responsive Issues
+
+
+----------------------------------
+:: Version - 4.0.0 - June 5, 2019
+----------------------------------
+* Updated: Design & Code Quality
+* New: Added New Home Pages & Others Inner Pages
+
+
+----------------------------------
+:: Version - 3.8.0 - May 11, 2019
+----------------------------------
+* Updated: Design & Code Quality
+
+
+------------------------------------
+:: Version - 3.7.0 - April 07, 2019
+------------------------------------
+* Add Another New Template
+* Updated: Bootstrap v4.2.1 > Bootstrap 4.3.1
+
+
+----------------------------------
+:: Version - 3.6.0 - Jan 06, 2019
+----------------------------------
+* Updated: Bootstrap v4.1.1 > Bootstrap 4.2.1
+* Fixed: Google Maps Issue
+* Fixed: Minor Issues
+
+
+-------------------
+:: Version - 3.5.0
+-------------------
+* Updated: Bootstrap v4.0.0 > Bootstrap v4.1.1
+* Updated: All SCSS Mixins
+* Improved: SCSS Code Quality
+
+
+------------------
+:: Version: 3.4.1
+------------------
+* Updated: Updated Documentation
+
+
+------------------
+:: Version: 3.4.0
+------------------
+* Updated: Bootstrap v4.0.0-beta > Bootstrap v4.0.0
+* Updated: Owl Carousel v2.0 > Owl Carousel v2.2.1
+* Updated: All Color Plate
+* Added: Themify Icon Fonts (Now you can use 3 icon fonts packages. (Font Awesome, Pe 7 Stroke, Themify Icons) )
+* Added: niceScroll Plugins for Modern Scroll Effects
+* New: Add 2 New Template
+* Updated: Mean Mobile Menu > Bootstrap 4 Menu
+* New: Use Sass for awesome stylesheets
+
+
+------------------
+:: Version: 3.3.0
+------------------
+* Updated: Re-design All Layout
+* New: Full Width Layout & Subscribe Header Form Layout
+* Improved: Code Quality
+* Fonts: Poppins > Roboto
+
+
+------------------
+:: Version: 3.2.0
+------------------
+* Updated: Bootstrap 4 Alpha 6 > Bootstrap 4 Beta
+* Updated: Color Contrast
+* Improved: Shortcodes Page
+* Improved: Mobile Menu
+* Removed: Bootstrap 3.3.7 Version from Download Package
+
+
+-------------------
+:: Version : 3.1.0
+-------------------
+* Fixed: Responsive Issues in Mobile Device
+
+
+------------------
+:: Version: 3.0.0
+------------------
+* New: Build with Bootstrap 4
+* Improved: Redesign All Pages
+* New: Add 10 Color Set
+
+
+------------------
+:: Version: 2.0.0
+------------------
+* Improved: Redesign Mobile Menu
+* New: Add Static Image When Video Doesn't Load (video background template)
+
+
+------------------
+:: Version: 1.0.0
+------------------
+* Initial Release

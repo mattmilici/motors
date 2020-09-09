@@ -1,0 +1,397 @@
+/* Reboot CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font;
+    color: $text-color;
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading-color;
+    font-weight: 600;
+}
+
+p {
+    color: $text-color;
+    @extend %para_color;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+#{$a_tags} {
+    @include trans-duration(500ms);
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+    color: $heading-color;
+    font-weight: 500;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.btn {
+    font-weight: 500;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 6px 48px 8px rgba(21, 131, 233, 0.125);
+    }
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.mr-0 {
+    margin-right: 0;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+// Section Padding
+
+.section_padding_130 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.section_padding_130_0 {
+    padding-top: 130px;
+    padding-bottom: 0;
+}
+
+.section_padding_0_130 {
+    padding-top: 0;
+    padding-bottom: 130px;
+}
+
+.section_padding_130_80 {
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+
+// Section Heading
+
+.section_heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+
+    h6 {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        letter-spacing: 1px;
+        color: $white-color;
+        border-radius: 6px;
+        padding: .5rem 1.5rem;
+        background-color: $bg-default;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+    h3 {
+        margin-bottom: 15px;
+        font-size: 2.1rem;
+        line-height: 1.5;
+
+        span {
+            @extend %p_color;
+        }
+
+        @media #{$breakpoint-lg} {
+            font-size: 2rem;
+        }
+
+        @media #{$breakpoint-md} {
+            font-size: 1.75rem;
+        }
+
+        @media #{$breakpoint-xs} {
+            font-size: 1.5rem;
+        }
+
+        @media #{$breakpoint-sm} {
+            font-size: 1.75rem;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .line {
+        width: 120px;
+        height: 5px;
+        margin: 30px auto 0;
+        border-radius: 6px;
+        background: #2d2ed4;
+        background: -webkit-linear-gradient(to right, #e24997, #2d2ed4);
+        background: linear-gradient(to right, #e24997, #2d2ed4);
+    }
+
+    &.white {
+
+        h3,
+        h6 {
+            color: $white-color;
+        }
+
+        .line {
+            background-color: $white-color;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+
+.container {
+
+    @media #{$breakpoint-xs-landscape} {
+        max-width: 450px;
+    }
+
+    @media #{$breakpoint-sm} {
+        max-width: 540px;
+    }
+}
+
+.shortcode_area:nth-child(2n + 1) {
+    background-color: $gray-color;
+}
+
+.apland-btn {
+    position: relative;
+    z-index: 1;
+    @extend %p_bg_color;
+    border: 2px solid transparent;
+    @extend %c_white;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+        background-color: $white-color;
+        @extend %bg_white;
+        @extend %p_color;
+        font-size: 14px;
+    }
+
+    &.btn-2 {
+        background-color: $white-color;
+        color: $hover-color;
+        border: 2px solid $hover-color;
+
+        &:hover,
+        &:focus {
+            background-color: $bg-default;
+            border: 2px solid $hover-color;
+            color: $white-color;
+        }
+    }
+
+    &.btn-3 {
+        background-color: transparent;
+        color: $white-color;
+        border: 2px solid $text-color;
+
+        &:hover,
+        &:focus {
+            border: 2px solid $heading-color;
+        }
+    }
+
+    &.btn-4 {
+        background-color: $bg-green;
+        color: $white-color;
+        box-shadow: 0 2px 15px 3px rgba(7, 10, 87, 0.1);
+
+        &:hover,
+        &:focus {
+            background-color: $white-color;
+            color: $bg-default;
+        }
+    }
+}
+
+.bg-gray {
+    background-color: $gray-color;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        content: '';
+        background-color: $bg-default;
+        opacity: 0.97;
+        z-index: -1;
+    }
+}
+
+.bg-black-overlay {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        content: '';
+        background-color: $dark-blue;
+        opacity: 0.8;
+        z-index: -1;
+    }
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+}
+
+.mfp-image-holder,
+.mfp-iframe-holder {
+    .mfp-close {
+        color: $white-color;
+        text-align: center;
+        padding-right: 0;
+        width: 30px;
+        height: 30px;
+        border: 2px solid $white-color;
+        line-height: 26px;
+        right: 0;
+        border-radius: 50%;
+    }
+}
+
+.mfp-bg {
+    z-index: 99999;
+    background: $heading-color;
+    opacity: 0.9;
+}
+
+.mfp-wrap {
+    z-index: 999999;
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+
+    .jarallax-img {
+        position: absolute;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.h-100vh {
+    height: 100vh !important;
+}
+
+.welcome_area.h-100vh {
+    padding-top: 0;
+}
