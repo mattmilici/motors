@@ -39,6 +39,12 @@ body {
     border-radius: 25px;
 }
 
+.extra-descr {
+    font-weight: 500;
+    color: black;
+    padding-bottom: 3%;
+}
+
 h1,
 h2,
 h3,
